@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- nav -->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
         <a href="/" class="navbar">Our Pub MAP</a>
 
@@ -45,6 +46,8 @@
             <a href="/login">Sign In / Sign Up</a>
         </div>
     </nav>
+    <!-- -/nav -->
+
     <article class="container mt-3">
         <div class="row d-none d-sm-block">
             <!-- s-sm-block hides it in mobile -->
@@ -55,6 +58,7 @@
             </div>
         </div>
         <!-- callout -->
+
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center ">
@@ -74,6 +78,7 @@
         </div>
         <!-- /.callout -->
         <hr>
+
         <!-- quotes -->
         <section class="quotes">
             <div class="row">
@@ -155,13 +160,20 @@
         </section>
         <!-- /.features -->
     </article>
+
     <!-- Bootstrap Modal -->
-    <div class="modal" tabindex="-1">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="signUpModal">
             <div class="modal-content">
                 <!-- modal content contains a header, a body and footer -->
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -176,6 +188,7 @@
             </div>
         </div>
     </div>
+    <!-- ./Bootstrap Modal -->
 
     <!-- Bootstrap Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
