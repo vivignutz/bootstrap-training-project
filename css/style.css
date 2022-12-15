@@ -6,7 +6,7 @@ body {
 
 .callout-container {
     height: 100vh;
-    background: url("../images/tasty-beer.jpg") no-repeat bottom center fixed;
+    background: url("../images/tasty-beer.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,7 +25,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .quotes-container {}
@@ -40,13 +40,41 @@ body {
 }
 
 .block-divider--orange {
-    background-color: #f9d187;
+    background-color: #f05f40;
 }
 
 .block-divider--short {
     width: 35px;
 }
 
+/* navbar */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /* jumbotron */
 /* overriding the default bootstrap class of jumbotron */
@@ -54,7 +82,7 @@ body {
     background-color: transparent;
 }
 
-.jumbotron-h1 {
+.jumbotron-header {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
@@ -64,16 +92,17 @@ body {
     margin-top: 0;
     margin-bottom: 1rem;
     margin: 25px 0;
-    color: white;
+    color: #f6dddd;
 }
 
 .jumbotron small {
     font-size: 60%;
     font-style: italic;
-    color: white;
+    color: #f6dddd;
 }
 
 /* buttons */
+/* method called block element modifier BEM */
 .bnt--cta {
     font-weight: bold;
     border-radius: 23px;
