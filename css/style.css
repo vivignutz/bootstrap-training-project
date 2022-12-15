@@ -46,9 +46,12 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.quotes-container {}
+.quotes-container {
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
 
-.features-container {}
+/* .features-container {} */
 
 
 /* page headers */
